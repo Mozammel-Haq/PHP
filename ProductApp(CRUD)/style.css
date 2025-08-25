@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1f2e, #2a2d4a);
+    color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem auto;
+    color: #ff9800; /* warm orange accent */
+    font-size: 2rem;
+}
+.intro{
+    margin-bottom: 1.5rem;
+}
+
+form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+input {
+    border: 1px solid #444;
+    background: #333;
+    color: #fff;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #2985c2;
+    background: #2d2d3f;
+}
+
+input[type=submit] {
+    background: #2985c2;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background: #1e6ba0;
+}
+
+a.logout {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background: #e63946;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+a.logout:hover {
+    background: #c62f3a;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+table {
+    background-color: #fafafa;
+    color: #222;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+}
+
+tr:nth-child(odd) {
+    background: #f5f7fa;
+}
+
+tr:nth-child(even) {
+    background: #e1e8f0;
+}
+
+th {
+    background: #2985c2;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    padding: 12px 16px;
+}
+
+.action-btn {
+    text-decoration: none;
+    background: #2985c2;
+    padding: 6px 14px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.action-btn:hover {
+    background: #1e6ba0;
+}
